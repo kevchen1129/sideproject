@@ -40,7 +40,7 @@ export class Skyscraper extends GrObject {
           
         
         if (!buildingTexture) {
-            buildingTexture = new T.TextureLoader().load("Pictures/building.jpg");
+            buildingTexture = new T.TextureLoader().load("./Pictures/building.jpg");
         }
         if (!buildingMaterial) {
             buildingMaterial = new T.MeshStandardMaterial({
