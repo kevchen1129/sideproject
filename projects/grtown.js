@@ -49,7 +49,7 @@ function grtown() {
         groundplanesize:30  ,            // make the ground plane big enough for a world of stuff
         groundplanecolor:"lightblue"
     });
-    let loader=new T.CubeTextureLoader();
+   let loader=new T.CubeTextureLoader();
         loader.setPath("./Pictures/");
     let textureCube=loader.load([
         'Bottom.png',
@@ -59,6 +59,7 @@ function grtown() {
          'Right.png',
          'Left.png'
     ]);
+    
 
     // put stuff into it - you probably want to take the example stuff out first
 
@@ -174,7 +175,7 @@ function grtown() {
     world.ui = new WorldUI(world);
    
   // world.scene.background=textureCube;
-    textureCube.format=T.RGBAFormat;
+  //  textureCube.format=T.RGBAFormat;
     // now make it go!
     world.go();
 }

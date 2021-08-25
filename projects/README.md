@@ -1,9 +1,7 @@
-# README Yiyang Lin's personal Projects
+# README Yu-Tai 's personal Projects
 
-Name: Yiyang Lin
-
-WiscID: 9080288724
-
-GitHub Login: ylin363
+Name: Yu-Tai Chen
+WiscID: 9077432350
+GitHub Login: kevchen1129
 
 Attributions:
