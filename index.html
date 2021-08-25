@@ -1,32 +1,348 @@
 <!DOCTYPE html>
-<html>
-<!-- CS559 Graphics Town Framework
 
-    This is designed to be the beginnings of graphics town.
-    Most of the work is in the javascript files - this just makes sure
-    everything gets loaded and then load grtown
--->
-<header>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="Libs/style559.css">
-<link rel="stylesheet" href="Libs/pygments.css">
-<title>
-    Kevin/Yu-Tai Chen's Side Projects
-</title>
+<link rel="icon">
+<link rel="icon" href="./icon.png">
+<html class="no-js" lang="en">
 
-</header>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YiYang Lin</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
 <body>
-    <h1>3D Graphics Town</h1>
-    <h2>• Established a town including street, house, skyscraper, moving object
-        • Implemented class inheritance relationship to ensure object change individually
-        • Complex motion design: helicopter flying spot to spot, Carousel motion
-        • Focus on texture design on material, lighting, and shadowing of the environment</h2>
-    <h3>Date: 01/2019 ~ 05/2019</h3>
-    <script src="THREE/three.js"></script>
-    <script src="THREE/OrbitControls.js"></script>
-    <script src="THREE/FlyControls.js"></script>
-    <script src="THREE/FBXLoader.js"></script>
-    <script src="THREE/inflate.min.js"></script>
-    <script src="grtown.js" type="module"></script>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>YiYang</h1>
+            <h1>Lin</h1>
+            <h2>Computer Science BS</h2>
+            <h2>University of Wisconsin–Madison</h2>
+            <a href="/Yi-Yang Lin - Resume.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hi! Welcome to my personal website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2020 – November 2020">
+                <h3>Army Communication Electronics Information Training Center</h3>
+                <h4>Signaller - Army Signal Corps</h4>
+                <p>
+                    Military strategy
+                    - Mobile communications infrastructure
+                    - Computer Network Approach
+                    - Mobile microwave communication system
+                </p>
+            </div>
+
+            <div data-date="January 2019 – May 2019">
+                <h3>Computer Science Learning Center at UW-Madison</h3>
+                <h4>CS Tutor</h4>
+                <p>Recorded a short YouTube video demonstrating Basic Makefile instructions helping students understand
+                    concepts in
+                    programming class.</p>
+                <p>Tutored over 50 students on course programming projects in Java and discuss tutoring improvement with
+                    staff.</p>
+            </div>
+
+            <div data-date="May 2019 – August 2019">
+                <h3>BETTER - Cup Rental System - Student startup</h3>
+                <h4>Software Technician</h4>
+                <p>Maintained a cup rental system to solve the mass waste problem of disposable cups cooperated with
+                    merchants.</p>
+                <p>
+                    Worked in a diverse group consists of students from different cultures and backgrounds.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Wisconsin – Madison</h3>
+            <span class="education-date">Sep 2018 - Jun 2021</span>
+            <h4>Bachelor of Science in Computer Science </h4>
+            <p>Courses -</p>
+            <p>
+                Artificial Intelligence - Algorithm - Computer Engineering - Computer Graphics - CS Education - Data
+                Structure - Database Management Systems - Data Programming - Machine Organization - Operating Systems -
+                Software Engineering
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Bellevue College</h3>
+            <span class="education-date">Sep 2016 - Jun 2018</span>
+            <h4>Associate of Arts and Sciences with Distinction</h4>
+            <p>Member of Phi Theta Kappa Honor Society</p>
+        </div>
+        <!-- End .education-block -->
+        <div class="education-block">
+            <h3>Concordia Middle School</h3>
+            <span class="education-date">- Jun 2016</span>
+            <h4>High School Diploma</h4>
+            <!-- <p>Member of Phi Theta Kappa Honor Society</p> -->
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/town.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>3D Graphics Town & Helicopters</h3>
+                        <p>Graphic design in THREE.js for creating 3D object animations and
+                            applying Bezier curve to
+                            track motions.
+                        </p>
+                        <a href="/projects">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <iframe width="320" height="220" src="https://www.youtube.com/embed/j-sS0GdESgI" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Wardrobe</h3>
+                        <p>
+                            A web application helps user deciding wearing outfits by uploading physical clothing
+                            pictures into virtual wardrobe. </p>
+                        <a href="https://www.youtube.com/watch?v=j-sS0GdESgI&ab_channel=YiYangLin">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <iframe width="320" height="220" src="https://www.youtube.com/embed/ELissurlKzw?start=4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Meal Plan Analysis</h3>
+                        <p>
+                            A meal database system with Graphics user interface
+                            that users can build their analyzed food list and output their plan.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=ELissurlKzw&ab_channel=YiYangLin">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/buffer.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Buffer Manager - B+ Tree Index Manager C++</h3>
+                        <p>
+                            Built a structure on top of the pages that get from the I/O Layer to the nodes of the B+ tree.
+                        </p>
+                        <p>
+                            Utilized indices stored in its data in a file on disk, creating a disk image of the index file.
+                        </p>
+                        <a href="https://github.com/yiyanglin0102/CS564/tree/master/p3">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Assembly Language</li>
+            <li>Database</li>
+            <li>Node.js</li>
+            <li>Three.js</li>
+            <li>React</li>
+            <li>POSIX</li>
+            <li>Unix</li>
+            <li>Linux</li>
+            <li>SQL Server</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>JUnit</li>
+            <li>Model-View-Controller (MVC)</li>
+            <li>shell</li>
+            <li>batch</li>
+            <li>Agile</li>
+            <li>Vue.js</li>
+            <li>testing</li>
+            <li>Netlify</li>
+            <li>Google Cloud Platform</li>
+            <li>Firebase</li>
+            <li>CSS</li>
+            <li>HTML5</li>
+            <li>WiFi/BT validation test</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Send me Message</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/mzbkoayg">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2021 YiYangLin
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/yiyang-lin/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/yiyanglin0102/" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/yiyanglin0102/" target="_blank"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackexchange.com/users/12310501/yiyang-lin/" target="_blank"><i
+                                    class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://line.me/ti/p/RpwCL5pov5" target="_blank"><i class="fa fa-mobile-phone"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
+                                    aria-hidden="true"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
