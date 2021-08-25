@@ -50,14 +50,14 @@ function grtown() {
         groundplanecolor:"lightblue"
     });
     let loader=new T.CubeTextureLoader();
-
+        loader.setPath("./Pictures/");
     let textureCube=loader.load([
-        'Pictures/Bottom.png',
-        'Pictures/Back.png',
-        'Pictures/Top.png',
-         'Pictures/Front.png',
-         'Pictures/Right.png',
-         'Pictures/Left.png'
+        'Bottom.png',
+        'Back.png',
+        'Top.png',
+         'Front.png',
+         'Right.png',
+         'Left.png'
     ]);
 
     // put stuff into it - you probably want to take the example stuff out first
