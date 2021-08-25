@@ -174,8 +174,8 @@ function grtown() {
     // @ts-ignore       // we're sticking a new thing into the world
     world.ui = new WorldUI(world);
    
-  // world.scene.background=textureCube;
-  //  textureCube.format=T.RGBAFormat;
+   world.scene.background=textureCube;
+    textureCube.format=T.RGBAFormat;
     // now make it go!
     world.go();
 }
