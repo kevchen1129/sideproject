@@ -424,12 +424,15 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+   
 
     h2 {
         color: $heading;
+       
     }
 
     p {
+        
         color: $text;
         margin: 0;
     }
@@ -873,6 +876,7 @@ footer {
 
     #about {
         text-align: center;
+       
 
         p {
             text-align: left;
