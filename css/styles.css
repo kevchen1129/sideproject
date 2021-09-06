@@ -470,7 +470,9 @@ footer {
     color: #ffffff;
     font-size: 25px;
 }
-
+#note{
+    color: white;
+}
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
@@ -528,7 +530,7 @@ footer {
 
 #projects h2 {
     color: #ffffff;
-    margin-bottom: 50px
+    margin-bottom: 10px
 }
 
 .project {
@@ -562,7 +564,8 @@ footer {
 .project-info p {
     color: #74808a;
     margin: 0 0 15px 0;
-    font-size: 0.9em
+    font-size: 0.9em;
+    text-align: left;
 }
 
 .no-image .project-info {
