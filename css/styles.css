@@ -472,6 +472,9 @@ footer {
 }
 #note{
     color: white;
+    font-size: 30px;
+    
+
 }
 #education {
     padding: 50px 15px 20px 15px;
@@ -557,12 +560,19 @@ footer {
 .project-info h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #374054;
-    margin: 0 0 15px 0
+    color: #3b61b1;
+    margin: 0 0 15px 0;
+    font-family: bold ;
 }
 
 .project-info p {
-    color: #74808a;
+    color: #000000;
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+    text-align: left;
+}
+.project-info h4{
+    color: #1b889b;
     margin: 0 0 15px 0;
     font-size: 0.9em;
     text-align: left;
