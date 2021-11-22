@@ -5,6 +5,20 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 16px
 }
+:root{
+     --primary--color:#edf2fc;
+     --secondary--color:#212121; 
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    color: #3498db;
+    z-index: 20;
+    
+}
 
 body.active {
     overflow: hidden;
@@ -347,7 +361,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-top: 1px solid #dcd9d9;
-    background-color:rgb(5, 55, 102);
+    background-color:rgb(51, 87, 121);
     border-bottom: 1px solid #dcd9d9;
     
 }
@@ -367,6 +381,7 @@ footer {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
+    background-color: rgb(50, 64, 129);
    
 }
 
@@ -528,7 +543,8 @@ footer {
 #projects {
     padding: 50px 15px;
     border-bottom: 1px solid #dcd9d9;
-    text-align: center
+    text-align: center;
+    background-color: rgb(148, 122, 163);
 }
 
 #projects h2 {
@@ -851,3 +867,5 @@ footer {
 #script-position{
     text-align: center;
 }
+
+
