@@ -1,23 +1,7 @@
-/*!
-*/
-
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px
-}
-:root{
-     --primary--color:#edf2fc;
-     --secondary--color:#212121; 
-}
-#icon{
-    width: 30px;
-    cursor: pointer;
-    position: fixed;
-    right: 15px;
-    top: 10px;
-    color: #3498db;
-    z-index: 20;
-    
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    background-color: #34aabeec;
 }
 
 body.active {
@@ -26,17 +10,16 @@ body.active {
 }
 
 .no-js #experience-timeline>div {
-    background: #fff;
+    background: "background";
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #dcd9d9;
-   
+    border: 1px solid "border"
 }
 
 .no-js #experience-timeline>div h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #374054;
+    color: "heading";
     display: inline-block;
     margin: 0
 }
@@ -49,8 +32,8 @@ body.active {
 }
 
 .no-js #experience-timeline>div p {
-    color: #74808a;
-    font-size: 0.9em;
+    color: "text-primary";
+    font-size: .9em;
     margin: 0
 }
 
@@ -62,6 +45,7 @@ body.active {
     0% {
         transform: translateY(-100%)
     }
+
     100% {
         transform: translateY(0)
     }
@@ -77,17 +61,24 @@ header {
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-duration: 0.75s
+    animation-duration: .75s
 }
 
 header ul {
     display: inline-block;
-    background: rgb(175, 213, 247);
     text-align: center;
     padding: 10px;
     margin: 0;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px
+}
+
+.theme--light header ul {
+    background-color: #afd5f7
+}
+
+.theme--dark header ul {
+    background-color: #1c2125
 }
 
 header li {
@@ -96,19 +87,33 @@ header li {
 
 header a {
     display: block;
-    color: #013b69;
     padding: 10px
 }
 
+.theme--light header a {
+    color: #0d0d0e
+}
+
+.theme--dark header a {
+    color: #f4f4f5
+}
+
 header a:hover {
-    color: #ffffff;
+    color: "base-color-hover";
     text-decoration: none;
-    background: #3c4bd6;
     border-radius: 4px
 }
 
+.theme--light header a:hover {
+    background-color: "base-color-hover"
+}
+
+.theme--dark header a:hover {
+    background-color: #2c89c7
+}
+
 header a:focus {
-    color: #ffffff;
+    color: "base-color";
     text-decoration: none
 }
 
@@ -131,28 +136,36 @@ header.sticky {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: #3498db;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
-    border-radius: 4px;
-    background: #fff
+    border-radius: 4px
+}
+
+.theme--light #mobile-menu-open {
+    color: #0d0d0e;
+    background-color: #fff !important
+}
+
+.theme--dark #mobile-menu-open {
+    color: #f4f4f5;
+    background-color: #1c1c1c !important
 }
 
 #mobile-menu-close {
     display: none;
     text-align: right;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: "background";
     font-size: 1.5em;
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #ffffff
+    color: "base-color"
 }
 
 #mobile-menu-close span {
-    font-size: 0.5em;
+    font-size: .5em;
     text-transform: uppercase
 }
 
@@ -164,13 +177,21 @@ footer {
     padding: 50px 0
 }
 
+.theme--light footer {
+    background-color: #000
+}
+
+.theme--dark footer {
+    background-color: #000
+}
+
 .copyright {
     padding-top: 20px
 }
 
 .copyright p {
     margin: 0;
-    color: #74808a
+    color: gray
 }
 
 .top {
@@ -184,12 +205,12 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #b9bfc4;
+    color: gray;
     text-align: center
 }
 
 .top i {
-    color: #74808a
+    color: "text-primary"
 }
 
 .social {
@@ -209,11 +230,15 @@ footer {
 
 .social a {
     display: block;
-    color: #74808a;
+    color: gray;
     padding: 10px
 }
 
-.social a:hover {
+.theme--light .social a:hover {
+    color: "base-color"
+}
+
+.theme--dark .social a:hover {
     color: #3498db
 }
 
@@ -222,22 +247,22 @@ footer {
     color: #fff;
     padding: 15px 25px;
     border: 3px solid #fff;
-    border-radius: 50px;
-    transition: .5s ease all
+    border-radius: 30px;
+    transition: 0.5s ease all
 }
 
 .btn-rounded-white:hover {
-    color: #3498db;
-    background: rgb(255, 255, 255);
+    color: "base-color";
+    background: #fff;
     text-decoration: none
 }
 
 .shadow {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24)
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15)
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .15)
 }
 
 .heading {
@@ -245,24 +270,23 @@ footer {
     display: inline-block;
     font-size: 2em;
     font-weight: 300;
-    margin: 0 0 30px 0;
-   
+    margin: 0 0 30px 0
 }
 
 .heading:after {
     position: absolute;
-    content: '';
+    content: "";
     top: 100%;
     height: 1px;
     width: 50px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #ffffff
+    background-color: #fff
 }
 
 .background-alt {
-    background: #3940aa
+    background: "background-alt"
 }
 
 #lead {
@@ -270,10 +294,22 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    padding: 15px
+}
+
+.theme--light #lead {
+    background: url("../images/lead-bg.jpg");
+    background-position: center;
+    background-size:cover;  
+    background-repeat: no-repeat;
+    background-position-y:50px ;
+}
+
+.theme--dark #lead {
+    background: url("../images/iceberg-dark-minimal.jpg");
+    background-position: center;
     background-size: cover;
-    padding: 15px;
-    overflow: hidden
+    background-repeat: no-repeat;
 }
 
 #lead-content {
@@ -281,28 +317,19 @@ footer {
     z-index: 10;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     text-align: center
 }
 
-#lead-content h1, #lead-content ‘ {
-    margin: 0
-}
-
 #lead-content h1 {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    font-size: 7.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 1em;
-   
+    color: #fff;
+    font-size: 2.25em;
 }
 
 #lead-content h2 {
-    color: #a0cfee;
+    color: #fff;
     font-weight: 500;
-    font-size: 2.25em;
+    font-size: 1.5m;
     margin-bottom: 15px
 }
 
@@ -314,8 +341,16 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    z-index: 20;
     z-index: 1
+}
+
+.theme--light #lead-overlay {
+    background-color: #4691c3b7
+}
+
+.theme--dark #lead-overlay {
+    background-color: #333d49b7
 }
 
 #lead-down {
@@ -336,7 +371,6 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #a0cfee;
     text-align: center
 }
 
@@ -350,9 +384,11 @@ footer {
     0% {
         transform: scale(1, 1)
     }
+
     50% {
         transform: scale(1.2, 1.2)
     }
+
     100% {
         transform: scale(1, 1)
     }
@@ -360,33 +396,46 @@ footer {
 
 #about {
     padding: 75px 15px;
-    border-top: 1px solid #dcd9d9;
-    background-color:#385eaf;
-    border-bottom: 1px solid #dcd9d9;
-    
+    border-bottom: 1px solid "border"
 }
-#about h1 {
-    color: white;
+
+.theme--light #about {
+    background-color: #385eaf;
+    color: #0d0d0e
 }
+
+.theme--dark #about {
+    background-color: #515661;
+    color: #f4f4f5
+}
+
 #about h2 {
-    color: #ffffff
+    color: #fff
 }
 
 #about p {
-    color: #ffffff;
+    color: #fff;
     margin: 0
 }
 
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 1px solid "border"
+}
+
+.theme--light #experience {
     background-color: #314f92;
-   
+    color: #0d0d0e
+}
+
+.theme--dark #experience {
+    background-color: #272b33;
+    color: #f4f4f5
 }
 
 #experience h2 {
-    color: #ffffff
+    color: #fff
 }
 
 #experience-timeline {
@@ -397,56 +446,77 @@ footer {
 
 #experience-timeline:before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     bottom: 0;
     left: 303px;
     right: auto;
     height: 100%;
     width: 3px;
-    background: #ffffff;
+    background-color: #fff;
     z-index: 0
 }
 
 #experience-timeline:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 3px;
     height: 40px;
-    background: #34d0db;
-    background: linear-gradient(to bottom, #34dba9, rgba(52, 152, 219, 0));
+    background-color: #fff;
     top: 100%;
     left: 303px
 }
 
 .vtimeline-content {
     margin-left: 350px;
-    background: rgb(104, 107, 158);
-    border: 0.5px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
     padding: 15px;
     border-radius: 3px;
-    text-align: left;
+    text-align: left
+}
 
+.theme--light .vtimeline-content {
+    background-color: #686b9e;
+    color: #fff
+}
+
+.theme--dark .vtimeline-content {
+    background-color: #292a42;
+    color: #fff
 }
 
 .vtimeline-content h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #ffffff;
     display: inline-block;
     margin: 0
+}
+
+.theme--light .vtimeline-content h3 {
+    color: #fff
+}
+
+.theme--dark .vtimeline-content h3 {
+    color: #fff
 }
 
 .vtimeline-content h4 {
     font-size: 1.2em;
     font-weight: 300;
-    color: #ffffff;
     margin: 0 0 15px 0
 }
 
+.theme--light .vtimeline-content h4 {
+    color: #fff
+}
+
+.theme--dark .vtimeline-content h4 {
+    color: #fff
+}
+
 .vtimeline-content p {
-    color: #ffffff;
-    font-size: 0.9em;
+    color: "text-primary";
+    font-size: .9em;
     margin: 0
 }
 
@@ -459,14 +529,22 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: rgb(255, 255, 255);
     width: 50px;
     height: 50px;
-    background: #344ddb;
     border-radius: 50%;
     float: left;
     z-index: 99;
     margin-left: 280px
+}
+
+.theme--light .vtimeline-icon {
+    background-color: #344ddb;
+    color: #fff
+}
+
+.theme--dark .vtimeline-icon {
+    background-color: #152370;
+    color: #fff
 }
 
 .vtimeline-icon i {
@@ -482,24 +560,26 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #ffffff;
     font-size: 25px;
+    color: #fff
 }
-#note{
-    color: white;
-    font-size: 30px;
-    
 
-}
 #education {
     padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid #dcd9d9;
-    text-align: center;
-    background-color: rgb(56, 68, 119);
+    border-bottom: 1px solid "border";
+    text-align: center
+}
+
+.theme--light #education {
+    background-color: #384477
+}
+
+.theme--dark #education {
+    background-color: #15192e
 }
 
 #education h2 {
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 50px
 }
 
@@ -507,7 +587,7 @@ footer {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid #dcd9d9;
+    border: 1px solid "border";
     text-align: left
 }
 
@@ -515,16 +595,16 @@ footer {
     font-weight: 500;
     float: left;
     margin: 0;
-    color: #ffffff
+    color: #fff
 }
 
 .education-block span {
-    color: #ffffff;
+    color: #fff;
     float: right
 }
 
 .education-block h4 {
-    color: #ffffff;
+    color: #fff;
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0
@@ -532,8 +612,8 @@ footer {
 
 .education-block p, .education-block ul {
     margin: 0;
-    color: #ffffff;
-    font-size: 0.9em
+    color: #fff;
+    font-size: .9em
 }
 
 .education-block ul {
@@ -542,56 +622,80 @@ footer {
 
 #projects {
     padding: 50px 15px;
-    border-bottom: 1px solid #dcd9d9;
-    text-align: center;
-    background-color: rgb(38, 49, 102);
+    border-bottom: 1px solid "border";
+    text-align: center
+}
+
+.theme--light #projects {
+    background-color: #263166
+}
+
+.theme--dark #projects {
+    background-color: #0b0f22
 }
 
 #projects h2 {
-    color: #ffffff;
-    margin-bottom: 10px
+    color: #fff;
+    margin-bottom: 50px
+}
+
+#projects #note p {
+    color: #fff
 }
 
 .project {
     position: relative;
     max-width: 900px;
+    max-height: fit-content;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
     border-radius: 4px
+}
+
+.theme--light .project {
+    background-color: #fff;
+    block-size: auto;
+}
+
+.theme--dark .project {
+    background-color: #000000;
+    
 }
 
 .project-image {
     float: left
 }
-
-.project-info {
+.theme--light .project-info{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 300px;
     padding: 15px
+
 }
+.theme--dark .project-info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
+    color: white;
+}
+
+
 
 .project-info h3 {
     font-size: 1.5em;
     font-weight: 300;
-    color: #3b61b1;
-    margin: 0 0 15px 0;
-    font-family: bold ;
+    color: "heading";
+    margin: 0 0 15px 0
 }
 
 .project-info p {
-    color: #000000;
+    color: "text-primary";
     margin: 0 0 15px 0;
-    font-size: 0.9em;
-    text-align: left;
-}
-.project-info h4{
-    color: #1b889b;
-    margin: 0 0 15px 0;
-    font-size: 0.9em;
-    text-align: left;
+    font-size: .9em
+    
 }
 
 .no-image .project-info {
@@ -607,13 +711,19 @@ footer {
 
 #skills {
     padding: 50px 15px;
-    text-align: center;
-    background-color: rgb(22, 29, 61);
-    
+    text-align: center
+}
+
+.theme--light #skills {
+    background-color: #161d3d
+}
+
+.theme--dark #skills {
+    background-color: #0d1127
 }
 
 #skills h2 {
-    color: #fff ;
+    color: #fff;
     margin-bottom: 50px
 }
 
@@ -621,28 +731,38 @@ footer {
     display: block;
     margin: 0 auto;
     padding: 0;
-    max-width: 800px;
-   
-    
+    max-width: 800px
 }
 
 #skills li {
     display: inline-block;
     margin: 7px;
     padding: 5px 10px;
-    color: #ffffff;
-    background: #e4e4ea;
+    color: #fff;
     list-style: none;
     cursor: default;
-    font-size: 1.2em;
-    background-color: rgb(42, 46, 63);
-    border-radius: 10px;
+    font-size: 1.2em
+}
+
+.theme--light #skills li {
+    background-color: #2a2e3f
+}
+
+.theme--dark #skills li {
+    background-color: #181b27
 }
 
 #contact {
     padding: 50px 15px;
-    background: #000000;
     text-align: center
+}
+
+.theme--light #contact {
+    background-color: #000
+}
+
+.theme--dark #contact {
+    background-color: #000
 }
 
 #contact h2 {
@@ -660,12 +780,11 @@ footer {
     display: block;
     width: 100%;
     padding: 10px;
-    border-radius: 4px ;
+    border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: rgb(36, 36, 97);
     color: #fff;
-    transition: .5s ease all
+    transition: 0.5s ease all
 }
 
 #contact-form input::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
@@ -686,9 +805,16 @@ footer {
     color: #fff
 }
 
+.theme--light #contact-form input, .theme--light #contact-form textarea {
+    background-color: #242461
+}
+
+.theme--dark #contact-form input, .theme--dark #contact-form textarea {
+    background-color: #242461
+}
+
 #contact-form input:focus, #contact-form textarea:focus {
-    outline: none;
-    background: #16527a
+    outline: none
 }
 
 #contact-form textarea {
@@ -699,35 +825,42 @@ footer {
 #contact-form button {
     display: block;
     width: 100%;
-    background: rgb(36, 36, 97);
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: .5s ease all
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: 0.5s ease all
+}
+
+.theme--light #contact-form button {
+    background-color: #242461
+}
+
+.theme--dark #contact-form button {
+    background-color: #242461
 }
 
 #contact-form button:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23)
 }
 
 .optional-section {
     padding: 50px 15px;
     text-align: center;
-    border-top: 1px solid #dcd9d9
+    border-top: 1px solid "border"
 }
 
 .optional-section h2 {
-    color: #374054
+    color: "heading"
 }
 
 .optional-section-block {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid #dcd9d9;
+    border: 1px solid "border";
     background: #fff;
     text-align: left
 }
@@ -735,11 +868,11 @@ footer {
 .optional-section-block h3 {
     font-weight: 500;
     margin: 0 0 15px 0;
-    color: #374054
+    color: "heading"
 }
 
 .optional-section-block h4 {
-    color: #74808a;
+    color: "text-primary";
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0
@@ -747,8 +880,8 @@ footer {
 
 .optional-section-block p, .optional-section-block ul {
     margin: 0 0 15px 0;
-    color: #74808a;
-    font-size: 0.9em
+    color: "text-primary";
+    font-size: .9em
 }
 
 .optional-section-block ul {
@@ -759,6 +892,7 @@ footer {
     #experience-timeline:before, #experience-timeline:after {
         left: 23px
     }
+
     .vtimeline-date {
         width: auto;
         text-align: left;
@@ -767,9 +901,11 @@ footer {
         display: block;
         margin-left: 70px
     }
+
     .vtimeline-icon {
         margin-left: 0
     }
+
     .vtimeline-content {
         margin-left: 70px
     }
@@ -782,21 +918,26 @@ footer {
         max-height: auto;
         padding: 100px 15px
     }
+
     #lead-content {
         position: relative;
         transform: none;
         left: auto;
         top: auto
     }
+
     #lead-content h1 {
         font-size: 3em
     }
+
     #lead-content h2 {
         font-size: 1.75em
     }
+
     #about {
         text-align: center
     }
+
     #about p {
         text-align: left
     }
@@ -811,9 +952,11 @@ footer {
         bottom: 0;
         height: 100%
     }
+
     #mobile-menu-open, #mobile-menu-close {
         display: block
     }
+
     #menu {
         height: 100%;
         overflow-y: auto;
@@ -821,28 +964,36 @@ footer {
         border-radius: 0;
         width: 100%
     }
+
     #menu li {
         display: block;
         margin-bottom: 10px
     }
+
     #lead-content h1 {
         font-size: 2em
     }
+
     #lead-content h2 {
         font-size: 1.3em
     }
+
     #lead-content a {
         padding: 10px 20px
     }
+
     #lead-down {
         display: none
     }
+
     .education-block h3, .education-block span {
         float: none
     }
+
     .project-image {
         display: none
     }
+
     .project-info {
         position: relative;
         margin: 0;
@@ -850,9 +1001,11 @@ footer {
         top: auto;
         transform: none
     }
+
     footer {
         text-align: center
     }
+
     .social {
         text-align: center
     }
@@ -862,22 +1015,13 @@ footer {
     #lead-content h1 {
         font-size: 1.5em
     }
+
     #lead-content h2 {
         font-size: 1em
     }
+
     #lead-content a {
-        font-size: 0.9em;
+        font-size: .9em;
         padding: 5px 10px
     }
 }
-#script-position{
-    text-align: center;
-}
-#bottom{
-    background-color: black;
-}
-.footer{
-    background-color: black;
-}
-
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<!-- data-theme="light" -->
 <link rel="icon">
 <link rel="icon" href="./icon.png">
 <html class="no-js" lang="en">
@@ -17,7 +18,54 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
+<style>
+    #theme-btn{
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 200;
+        background-color: rgb(107, 107, 160);
+        color: white;
+        border: none;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+
+    #theme-btn .active{
+        display: block;
+    }
+    #theme-btn .hidden{
+        display: none;
+    }
+</style>
+<style>
+    #theme-dark{
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 200;
+        background-color: rgb(20, 25, 104);
+        color: white;
+        border: none;
+        padding: 8px 8px;
+        border-radius: 5px;
+    }
+    #theme-dark .active{
+        display: block;
+    }
+    #theme-dark .hidden{
+        display: none;
+    }
+</style>
+
 <body>
+
+    <!-- test button to toggle theme -->
+    <button id="theme-btn">    
+        <i class="fa fa-sun-o sun-icon" aria-hidden="true"></i>
+        <i class="fa fa-moon-o moon-icon" id="theme-dark" aria-hidden="true"></i>
+    </button>
+
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -98,28 +146,32 @@
             <div data-date="February – July 2021">
                 <h3>Family Mart Head Office</h3>
                 <h4>Software System Engineer Intern</h4>
-                <p> •	Digitalize traditional company management system from paperwork to electronic system by using Agent flow </p>
-                <p> •	Customize each departments user interface form and enable choosing multiple departments or employees without conflict </p>
-                <p> •	Acknowledge the hierarchy of the company and implement the process of each form flows from employee to manager </p>
+                <p> •	Digitalized the traditional company management system from a paperwork to digital media medium, utilizing Agent flow to implement cutting-edge technology for more efficient and effective workflow. </p>
+                <p> •	Customized the user interface form of each department, allowing the choice of multiple departments or employees without issues for seamless day-to-day operations and use by 50 employees.
+                </p>
+                <p> •	Supervised end-to-end flow from employee to manager of each digital form, proactively examining integrated systems to ensure 0% permission conflict for expedited functions and marginalized errors. </p>
+                <p> •   Generated the Emergency Product Modification Form and Product Quality Assurance form, consolidating key documentation to verbally communicate product updates for operational transparency across 2021.</p>
             </div>
 
             <div data-date="June - July 2019">
                 <h3>Delta Mobile System</h3>
                 <h4>Software Engineer Intern</h4>
-                <p> •	Improved Automatic Recognition System for trainHOG (an open-source AI algorithm use to detect pedestrian) </p>
-                <p> •	Implemented open cv and compare 100 negative and 100 positive samples </p>
-                <p> •	Developed in C++ established fundamentals rules for trainHOG to have flexibility on determining positive and negative samples </p>
-                <p> •	Communicate with Git work environment (push, pull, merge with any coding changes) </p>
-                <p> •	Create 500+ samples of human recognition for radar sensor   </p>
+                <p> •	Foresaw potential to streamline operational procedures, improving the Automatic Recognition System for “trainHOG”, an open-source AI algorithm use to detect pedestrians. </p>
+                <p> •	Created 500+ samples of human recognition for the radar sensor, compared 100 negative and 100 positive samples, and implemented op cv. </p>
+                <p> •	Developed fundamental rules for trainHOG in C++, leveraging technical expertise to enable flexibility for determining either positive or negative samples during active employment. </p>
+                
             </div>
 
             <div data-date="May – August 2019">
                 <h3>PricewaterhouseCoopers (PwC)</h3>
                 <h4>Assistant – Risk Assurance Team.</h4>
-                <p> •	Analyzed data of balance sheet & income statement of finance holding companies </p>
-                <p> •	Update new law enforcement threshold of finance to finance holding companies </p>
-                <p> •	Established recovery and resolution plan for every finance holding companies </p>
-                <p> •	Calculate asset liquidity under pressure tests to simulate economic crisis (use excel to complete most task)</p>
+                <p> •	Analyzed data of balance sheets and income statements of financial holding companies, consistently utilized a keen eye for
+                    attention to detail to investigate both quantitative and qualitative data to derive key insights </p>
+                <p> •	Updated the new law enforcement threshold of finance-to-finance holding companies for strict compliance. </p>
+                <p> •	Mapped out strategies to establish recovery/resolution plans to safeguard finance holding companies. </p>
+                <p> •	Utilized comprehensive knowledge of Microsoft Excel to calculate asset liquidity under pressure tests to simulate
+                    economic crises, astutely extrapolating invaluable findings throughout 2018.
+                    </p>
                 
             </div>
 
@@ -140,7 +192,7 @@
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>University of Wisconsin – Madison</h3>
-            <span class="education-date">Sep 2018 - Jun 2022</span>
+            <span class="education-date">September 2017 - May 2022</span>
             <h4>Bachelor of Science in Computer Science & Game Design Certificate </h4>
             <p>Courses taken:</p>
             <p> - Computer Graphics - Human Computer Interaction (HCI) - Database Management Systems </p>
@@ -172,9 +224,9 @@
                         <a href="/projects"><h3>3D Graphics Town & Helicopters</h3></a>
                        
                        
-                            <p>   • Implemented class inheritance relationship to ensure object change individually</p>
-                            <p>   • Complex motion design: helicopter flying spot to spot, Carousel motion</p>
-                            <p>   • Focus on texture design on material, position, lighting, and shadowing of the environment</p>
+                            <p style="text-align: left;">   • Implemented class inheritance relationship to ensure object change individually</p>
+                            <p style="text-align: left;">   • Complex motion design: helicopter flying spot to spot, Carousel motion</p>
+                            <p style="text-align: left;">   • Focus on texture design on material, position, lighting, and shadowing of the environment</p>
                             
                         </p>
                       
@@ -189,13 +241,13 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <a href="https://devpost.com/software/unbottlr"><h3>Unbottlr</h3></a> 
-                        <p>   • 2019 Carbon Madhacks People's Choice Award
+                        <p style="text-align: left;">    • 2019 Carbon Madhacks People's Choice Award
                         </p>
-                        <p>   • Tracks water consumption, food waste and plastic usage using our tracker
+                        <p style="text-align: left;">   • Tracks water consumption, food waste and plastic usage using our tracker
                         </p>
-                        <p>   • Use Adobe XD to design prototype and wireframe 
+                        <p style="text-align: left;">   • Use Adobe XD to design prototype and wireframe 
                         </p>
-                        <p>   • Build on HTML/CSS and incorportate with React & Next.js
+                        <p style="text-align: left;">   • Build on HTML/CSS and incorportate with React & Next.js
                         </p>
                         
                       
@@ -209,12 +261,11 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <a href="https://github.com/clairehjolly/DCHS_1"><h3>Dane County Humane Society Andriod Apps</h3></a> 
-                        <p>   • Adapt pet system and lost pet function, multiple rules of filter searching
+                        
+                        <p style="text-align: left;">   • Implemented firebase to store and retrieve data from lost and adopt animal database
                         </p>
-                        <p>   • Implemented firebase to store and retrieve data from lost and adopt animal database
-                        </p>
-                      <p>     • User login/sign up, edit profile, settings, notification, calendar with events</p>
-                      <p>     •	Established admin version with all permission to add/edit/delete event or pets  </p>
+                      <p style="text-align: left;">     • the Android application version to consist of functions such as user login/sign up, edit profile, settings, notification, calendar with events, and basic information about DCHS/p>
+                      <p style="text-align: left;">     •	Established an admin version with all permission to add/edit/delete events or pets from the database  </p>
                       
                     </div>
                     <!-- End .project-info -->
@@ -228,10 +279,10 @@
                         <a href="https://xd.adobe.com/view/856678f4-e2f6-49f1-90bd-1205c3c10281-d035/?fullscreen"><h3>Modified Cars.com App High-Fidelity Prototyping(UX)</h3></a> 
                         
 
-                        <a href = "/demo_Readme.pdf" > <h4> • Readme for demo Prototype (click me)</h4> </a>
-                        <a href = "/low_fi.pdf" > <h4> •  Low-fidelity prototyping (click me)  </h4></a>
-                        <a href = "/Report-Yu-Tai.pdf" > <h4> •  Contextual Inquiry Report (click me)  </h4></a>
-                        <a href = "/Usability Report-yu-tai.pdf" > <h4> •  Usability Report (click me)  </h4></a>
+                        <a href = "/demo_Readme.pdf" > <p style="text-align: left;" > • Readme for demo Prototype (click me)</p> </a>
+                        <a href = "/low_fi.pdf" > <p style="text-align: left;"> •  Low-fidelity prototyping (click me)  </p></a>
+                        <a href = "/Report-Yu-Tai.pdf" > <p style="text-align: left;"> •  Contextual Inquiry Report (click me)  </p></a>
+                        <a href = "/Usability Report-yu-tai.pdf" > <p style="text-align: left;"> •  Usability Report (click me)  </p></a>
                         
                       
                  
@@ -332,6 +383,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/theme.js"></script>
     
    
 </body>

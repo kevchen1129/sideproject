@@ -1,0 +1,81 @@
+// background colors
+$base-color: #95b6cc;
+$base-color-hover: #88a9be;
+$background--light: #fff;
+$background-alt--light: #f2f2f5;
+
+$base-color--dark: #3498db;
+$base-color-hover--dark: #2c89c7;
+$background--dark: rgb(8, 8, 8);
+$background-alt--dark: #19191a;
+
+// text colors
+$text-primary--light: #0d0d0e;
+$text-secondary--light: #18181a;
+$heading--light: #374054;
+
+$text-primary--dark: #f4f4f5;
+$text-secondary--dark: #c9c9d1;
+$heading--dark: #fff;
+
+// borders
+$border--light: #dcd9d9;
+$border--dark: rgb(51, 51, 51);
+
+// images
+$lead-image--dark: "../images/iceberg-dark-minimal.jpg";
+
+$lead-image--light: "../images/lead-bg.jpg";
+
+// text box colors
+$textbox--light: #242461;
+$textbox--dark: #242461;
+
+// marker icons
+$marker--light: #344ddb;
+$marker--dark: #344ddb;
+
+// section wise colors
+// if you want single colors for all blocks, you can declare a single variable for all blocks
+// I separated since each section seemed to have a shade of blue
+// you can just use the darken and lighten function from sass as well
+
+// header
+$bg-header--light: #afd5f7;
+$bg-header--dark: #1c2125;
+$bg-overlay--light: #4691c3b7;
+$bg-overlay--dark: #333d49b7;
+
+// about
+$bg-about--light: #385eaf;
+$bg-about--dark: #2b53aa;
+
+// experience
+$bg-experience--light: #314f92;
+$bg-experience--dark: #264077;
+$bg-experience-box--light: #686b9e;
+$bg-experience-box--dark: #4b4d7c;
+
+// education
+$bg-education--light: #384477;
+$bg-education--dark: #2c3663;
+
+// projects
+$bg-projects--light: #263166;
+$bg-projects--dark: #1c2552;
+$bg-project-card--light: #ffffff;
+$bg-project-card--dark: #d8d2d2;
+
+// skills
+$bg-skills--light: #161d3d;
+$bg-skills--dark: #0d1127;
+$bg-skill-item--light: #2a2e3f;
+$bg-skill-item--dark: #181b27;
+
+// contact
+$bg-contact--light: #000000;
+$bg-contact--dark: #000000;
+
+// footer
+$bg-footer--light: #000000;
+$bg-footer--dark: #000000;
