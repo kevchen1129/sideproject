@@ -641,7 +641,8 @@ footer {
 }
 
 #projects #note p {
-    color: #fff
+    color: #fff;
+    font-size: 30px;
 }
 
 .project {
